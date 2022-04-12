@@ -5,6 +5,7 @@
 ```js
 const writer = new Autoput()
 console.log('contract address:', writer.address) // hyp1pj62xwrnalug2q5qpu4z5hunxhzptk2j46ftajje3phf4a4wp95rqq0lyw7
+console.log('public key:', writer.key) // 659293c28da0d5467b515641893f4e9e52a7ce7f675feb83c70680e3b1cfbf08
 
 writer.once('error', error => {
   console.error(error.message === 'VIOLATION')
